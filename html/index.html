@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Game</title>
+</head>
+<body>
+
+    <section id="screen-game">
+        <div class="screen-size">
+            <div class="ceu">
+                <img src="../assets/nuvens.png" alt="nuvens" class="nuvens">
+                <h1 id="score">SCORE 0</h1>
+                <div class="buttons">
+                    <button id="start">Start</button>
+                    <button id="restart">Restart</button>
+                    <button id="stop">Stop</button>
+                </div>
+                <div class="sprites" style="display: none;">
+                    <img src="../assets/walking-zombi.webp" alt="zombi" class="zombi-left">
+                    <img src="../assets/dying-zombie.webp" alt="zombi" class="dying-zombie-left" style="display: none;">
+                    <img src="../assets/attack-zombi.webp" alt="zombi" class="attack-zombie-left zombi-left" style="display: none;">
+
+                    <img src="../assets/walking-zombi.webp" alt="zombi" class="zombi-right" style="transform: scaleX(-1);">
+                    <img src="../assets/dying-zombie.webp" alt="zombi" class="dying-zombie-right" style="display: none; transform: scaleX(-1);">
+                    <img src="../assets/attack-zombi.webp" alt="zombi" class="attack-zombie-right zombi-right" style="display: none; transform: scaleX(-1);">
+
+                    <img src="../assets/standing-soldier-right.png" alt="soldier" class="soldier" id="standing-soldier">
+                    <img src="../assets/soldier-shot-1.png" alt="soldier-shooting" class="soldier" id="soldier-shooting">
+                    <div class="shot"></div>
+
+                </div>
+            </div>
+            <div class="chao">
+                <div class="grama"></div>
+                <div class="terra"></div>
+            </div>
+        </div>
+        <div class="how-to-play">
+            <h1>HOW TO PLAY</h1>
+            <h2>To shoot press SPACE</h2>
+            <h2>To turn left use A or left arrow</h2>
+            <h2>To turn right use D or right arrow</h2>
+        </div>
+    </section>
+    
+    <script src="../js/script.js">
+
+    </script>
+</body>
+</html>
